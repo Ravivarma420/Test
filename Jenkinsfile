@@ -14,15 +14,9 @@ steps
         
     }
     
-}
-stage ('Build1') 
-{
-    steps
-    {
-       sh "cd /home/ubuntu/workspace/project pipe/account-service ; mvn clean install " 
-    }
-}
+
  
 }
     
+}
 }
