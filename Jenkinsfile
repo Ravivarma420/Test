@@ -23,7 +23,7 @@ stage ('Build1')
  {
         steps
         {
-            sh "cd /home/ubuntu/workspace/pipeline/account-service ; mvn clean install "
+            sh "cd /home/ubuntu/workspace/pipeline/${microservices} ; mvn clean install "
     
         }
  
