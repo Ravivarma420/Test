@@ -2,7 +2,11 @@ pipeline {
 agent {
 label 'latestnode'
 }
-options([parameters([choice(choices: 'account-service\ncustomer-service', description: 'build with above params', name: 'microservices')])])  
+parameters{
+    choice(name: 'microservices',
+       choices: 'account-service\ncustomer-service',
+        description: 'build with below microservices')
+}
 
 stages {
 
